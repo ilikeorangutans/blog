@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "en-ca"
+title = "Jakob Külzer's Blog"
+theme = "temple"
+
+[params]
+  highlight = true
+  topmenu = "categories"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[author]
+  name = "Jakob Külzer"
+  github = "ilikeorangutans"
+  email = "jakob.kuelzer@gmail.com"
