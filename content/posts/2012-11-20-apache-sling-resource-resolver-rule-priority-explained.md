@@ -2,6 +2,7 @@
 layout: post
 date: 2012-11-20T13:59:40-04:00
 title: "Apache Sling Resource Resolver Rules in a Nutshell"
+slug: "apache-sling-resource-resolver-rule-priority-explained"
 category:
 tags: [ Apache Sling, JCR, OSGI, Regexp, CQ5, Adobe WEM ]
 ---
