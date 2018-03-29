@@ -1,5 +1,6 @@
 ---
 title: "Writing an Operating System - Environment Setup"
+slug: "writing-an-operating-system-cross-compiler-setup"
 date: 2015-10-26T13:59:40-04:00
 tags: [Kernel, C, GCC, Binutils, make, osdev, cross compile]
 ---

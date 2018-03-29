@@ -1,5 +1,6 @@
 ---
 title: "The Problem with LinkedIn's Skills Endorsement"
+slug: "the-problem-with-linkedins-skills-endorsment"
 date: 2013-04-04T13:59:40-04:00
 tags: [ LinkedIn ]
 ---
