@@ -1,19 +1,16 @@
 ---
-layout: post
 title: "Maven Release Plugin and Git 1.9"
-description: ""
-category: 
+date: 2014-04-29T13:59:40-04:00
 tags: [Maven, Maven Release Plugin, Git]
 ---
-{% include JB/setup %}
 
-Ran into this issue today and wasted a good hour on figuring out what happened. Seems to be an issue with Git 1.9.x. 
+Ran into this issue today and wasted a good hour on figuring out what happened. Seems to be an issue with Git 1.9.x.
 
 ### Symptoms
 
-Maven release plugin successfully completes the `release:prepare` goal, creates the tag, but fails to commit the changed `pom.xml`. 
+Maven release plugin successfully completes the `release:prepare` goal, creates the tag, but fails to commit the changed `pom.xml`.
 
-### Solution 
+### Solution
 
 Git's output format changed slightly in one of the recent versions and Maven's SCM provider expects output in a certain way. Luckily you can force git to use the old output style:
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+draft: true
 title: "Game Dev Notes"
 description: ""
 category:

@@ -1,3 +1,7 @@
 [submodule "themes/temple"]
 	path = themes/temple
 	url = https://github.com/aos/temple.git
+[submodule "public"]
+	path = public
+	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
+	branch = master

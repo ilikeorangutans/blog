@@ -1,11 +1,13 @@
-baseURL = "http://example.org/"
+baseURL = "http://ilikeorangutans.github.io/"
 languageCode = "en-ca"
 title = "Jakob Külzer's Blog"
 theme = "temple"
 
+[permalinks]
+  posts = "/:year/:month/:day/:slug"
+
 [params]
   highlight = true
-  topmenu = "categories"
 
 [taxonomies]
   tag = "tags"
