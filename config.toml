@@ -3,6 +3,8 @@ languageCode = "en-ca"
 title = "Jakob Külzer's Blog"
 theme = "temple"
 
+disqusShortname = "ilikeorangutans"
+
 [permalinks]
   posts = "/:year/:month/:day/:slug"
 
