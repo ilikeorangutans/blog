@@ -1,7 +1,6 @@
 ---
 title: "Antlr Grammars for Fun and Profit"
 date: 2010-11-24T23:10:35-04:00
-draft: true
 tags:
   - ANTLR
   - AST
