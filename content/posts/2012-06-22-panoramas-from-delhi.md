@@ -1,5 +1,6 @@
 ---
 title: "Panoramas from Delhi, India"
+slug: "panoramas-from-delhi"
 date: 2012-06-22T13:59:40-04:00
 tags: [ New Delhi, Panorama, Travel, india]
 categories:

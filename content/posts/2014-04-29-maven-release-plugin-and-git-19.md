@@ -1,5 +1,6 @@
 ---
 title: "Maven Release Plugin and Git 1.9"
+slug: "maven-release-plugin-and-git-19"
 date: 2014-04-29T13:59:40-04:00
 tags: [Maven, Maven Release Plugin, Git]
 ---

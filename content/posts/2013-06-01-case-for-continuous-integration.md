@@ -4,6 +4,8 @@ date: 2013-06-01T13:59:40-04:00
 description: ""
 category:
 tags: [ Continuous Integration, Software Development, Unit Testing  ]
+aliases:
+  - "/2013/06/01/case-for-continuous-integration/"
 ---
 
 In my career as a software developer, I've come to appreciate the principles of Continuous Integration (CI). It forces you to do the hard things early and often and thus helps you reduce risk during development. It forces you to write tests, and be responsible about what you check in. All in all, good qualities and something that every development team should aspire to. Or so I thought. Reality is different, and so far almost every development team I have interacted with is deadly afraid of doing CI. So much, that there's been near-mutinies because CI and what it means for team, causes so many problems. This is something that puzzles me, and I realize it might be because the teams in question don't fully understand what CI is or only realize a subset of what it means. This is my attempt to demystify and explain CI.

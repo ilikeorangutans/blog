@@ -1,7 +1,10 @@
 ---
 title: "On Wasted Time"
 date: 2017-08-23T13:59:40-04:00
+slug: "on-wasted-time"
 draft: false
+aliases:
+  - /personal/2017/08/23/on-wasted-time/
 tags:
   - "Personal Development"
   - "Productivity"

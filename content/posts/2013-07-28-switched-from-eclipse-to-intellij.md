@@ -1,5 +1,6 @@
 ---
 title: "Switched from Eclipse to IntelliJ"
+slug: "making-eclipses-method-stubs-better"
 date: 2013-07-28T13:59:40-04:00
 category:
 tags: [ Eclipse, IntelliJ ]
