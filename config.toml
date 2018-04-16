@@ -1,15 +1,19 @@
-baseURL = "http://ilikeorangutans.github.io/"
+baseURL = "https://ilikeorangutans.github.io/"
 languageCode = "en-ca"
 title = "Jakob Külzer's Blog"
-theme = "temple"
+theme = "templefork"
 
 disqusShortname = "ilikeorangutans"
+
+enableGitInfo = true
 
 [permalinks]
   posts = "/:year/:month/:day/:slug"
 
 [params]
   highlight = true
+  dateformat = "2006-01-02"
+  dateformatpretty = "January 02 2006"
 
 [taxonomies]
   tag = "tags"
@@ -19,3 +23,5 @@ disqusShortname = "ilikeorangutans"
   name = "Jakob Külzer"
   github = "ilikeorangutans"
   email = "jakob.kuelzer@gmail.com"
+
+

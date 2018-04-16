@@ -5,3 +5,6 @@
 	path = public
 	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
 	branch = master
+[submodule "themes/templefork"]
+	path = themes/templefork
+	url = git@github.com:ilikeorangutans/temple
