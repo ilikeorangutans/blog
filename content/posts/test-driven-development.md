@@ -10,7 +10,7 @@
     - Software Design
 ---
 
-I've reflected on my practices as a software developer recently. One topic that continues to surprise me with its depth,
+Recently I reflected on my practices as a software developer. One topic that continues to surprise me with its depth,
 complexity, and utility is Test Driven Development (TDD). But it's been a long journey, and looking back, I realize that
 TDD was always explained in terms of the mechanics, as in what to do, but never in the more important why to do things.
 The mechanics are important, but blindly applying the mechanics without understanding the motivations leads to tests
@@ -24,7 +24,7 @@ thoughts around this topic.
 ## Blindly Following The TDD Approach
 
 The way TDD was introduced to me was something like this: "_just write tests for all methods and ideally you write the
-tests first_". Now, oftentimes this might have been worded differently, but at the end of the day that was my take-away.
+tests first_". Oftentimes this might have been worded differently, but at the end of the day that was my take-away.
 Kind of makes sense. Write a test for all the methods, so you make sure your algorithm works the way you want it to.
 
 Now we're starting a new project and we think "_this time I'll do it right_".  We create new tests and classes and add a
@@ -52,19 +52,20 @@ the promised benefits.
 
 ## Why The Pain?
 
-There's a few core issues with how TDD was approached in the above example. At its core TDD was reduced to its pure
-mechanics: "write tests for every method, write tests first". On top of that, there were software design issues that got
-laid bare by the attempt to test the code.
+There's a few core issues with how TDD was approached in the above example (and I've made all these mistakes). At its
+core TDD was reduced to its pure mechanics "write tests for every method, write tests first". On top of that, there were
+software design issues that got exposed by the attempt to test the code.
 
 ### TDD: It's about Behaviour, not Implementation
 
 In my opinion TDD is as much about testing as it is about software design. This point often gets lost in introductions
-to TDD but it's crucial and makes testing nicer and the structure of code better. Let me start by correcting the mantra
-we started out with. Instead of "_test all the methods_" it should say "_test the behaviour_". The underlying
-realization is that each unit of code should do one thing, it offers behaviour to its clients and **that** is what we
-want to test.
+to TDD but it's crucial to understand that TDD affords better design and better design enables testing.
 
-This is where TDD enables good software design. Testing the actual behaviour helps us focus on what the unit under test
+Let me start by correcting the mantra we started out with. Instead of "_test all the methods_" it should say "_test the
+behaviour_". The underlying realization is that each unit of code should do one thing, it offers behaviour to its
+clients and **that** is what we want to test.
+
+This is how TDD enables good software design. Testing the actual behaviour helps us focus on what the unit under test
 should actually do. Our tests become about _what_ the code does, not _how_ it does it. When we write tests we only test
 the methods that facilitate the behaviour we want. Now, if we change the implementation that backs this behaviour, we
 don't need to change our tests because the behaviour should remain the same.
@@ -92,12 +93,18 @@ is to focus on solving just what is asked, and writing a test first that spells 
 out the "blanks". This might not appear to be a big issue, but to me it's a fantastic mental help that really leads to
 more compact code, simply because it doesn't to other things.
 
-## A better approach to Test Driven Development
+### Bad Design
+
+* Elaborate on bad OOP design, classes that do too many things (helper methods?)
+* No inversion of control, leads to stubbing/mocking elements under test
+* Classes in violation of SRP are hard to test because you need to mock everything
+
+## My (a better?) approach to Test Driven Development
 
 Now that we've laid out the background, we can look at the mechanics of TDD again and put them together. The following
 approach is what I now use daily and is inspired by what many superbly smart people like my coworker
-[Alex](http://www.alexaitken.com/) have
-taught me and one of my favourite books, [Growing Object Oriented Design Guided by Tests]().
+[Alex](http://www.alexaitken.com/) have taught me and one of my favourite books, [Growing Object Oriented Design Guided
+by Tests]().
 
 ### Start with a Test
 
@@ -105,19 +112,65 @@ Whatever it is I'm doing, I'll start with a test. If I'm writing new code, I'll 
 will have to do. If I'm fixing a bug, I'll write a test that triggers exactly this bug.
 
 I'll spend some time to think about the test name; it should be about the behaviour, not about the implementation that
-powers this behaviour. Smells to look out for are tests names like `returns ArrayList` (focuses on
-implementation) or `run with ignore list` (doesn't tell us what the behaviour is or what this test is about). Better
-might be `find returns results from search path` or `find does return results that are in the ignore list`. You'll notice
-I like to give my tests long, descriptive names and I spend some time thinking about the name and what it is I want to
+powers this behaviour. Smells to look out for are tests names like `returns ArrayList` (focuses on implementation) or
+`run with ignore list` (doesn't tell us what the behaviour is or what this test is supposed to test). Better might be
+`find returns results from search path` or `find does not return results that are in the ignore list`. You'll notice I
+like to give my tests long, descriptive names and I spend some time thinking about the name and what it is I want to
 assert in the test.
 
-Then I set up the test body, organizing it following the
-[Arrange-Act-Assert](http://wiki.c2.com/?ArrangeActAssert) pattern. First, arrange the  test setup,
-then act by calling the method under test, and then assert the outcome.
+Then I set up the test body, organizing it following the [Arrange-Act-Assert](http://wiki.c2.com/?ArrangeActAssert)
+pattern. First, arrange the  test setup, then act by calling the method under test, and then assert the outcome.
 
-## Summary
+**And before I actually start writing any code, I make sure that the test actually fails**. Starting with a test that
+passes before you even wrote any code is treacherous. You _might_ be under the impression that everything works but that
+might just be due to chance. This is even more
+
+### Write Just Enough Code to Satisfy the Test
+
+* Write only code to make test green.
+* Don't add more, don't over design
+* Do I want to go into cost of wrong abstractions/over design (maybe link to Sandi Metz' post about wrong abstractions)
+
+### Make Tests Pass, Write More Tests. Rinse, Repeat
+
+* Talk about basic red-green cycle
+* Once tests are green you may refactor or add more tests
+* then repeat cycle
+
+### Only Refactor Code *or* Tests, Never Both
+
+* only refactor tests when they're green
+* only refactor code when the tests are green
+* never touch code when refactoring tests, never touch tests when refactoring code
+
+### Baby Steps
+
+* when refactoring complex/legacy code take small steps. Be rigorous about touching only tests or code.
+* checkpoint frequently by committing, sometimes after every single red-green cycle
+* don't be afraid to throw away an iteration if it doesn't work/gets too complicated
+
+### Listen to the Tests
+
+* If something is hard to test, the code structure needs to change
+* find yourself trying to test some functionality that's hard to test because it's deeply buried into a unit? Extract
+  and make its own thing.
+
+## Is it Dogma?
+
+* Talk about how many of the points sound dogmatic
+* They are not strict laws but rather guidelines
+* IMHO key is reducing mental capacity required by minimizing "state" (as in what the developer has to keep in his head)
+* A developer can easily ignore these guidelines, and in certain cases I do, but they help and guide me especially in
+  complicated situations
+
+## Closing Thoughts
 
 TDD is a fantastic approach to software development. It takes practice and discipline to do right, but once I forced
-myself through the approach described above I noticed a considerable improvement in my code quality and design. My units
-became smaller and more cohesive, the tests more focused, and I had more fun doing so.
+myself through the approach described above I noticed considerable improvement in my code quality and design. My units
+became smaller and more cohesive, tests more focused, and intent of my classes more obvious. And, most importantly, I
+had more fun doing so.
+
+But to fully understand TDD I had to realize that writing unit tests is to TDD what knife skills are to cooking. You
+don't become a good cook by being good with a knife. It certainly helps that you can efficiently slice onions but it
+doesn't mean your food is delicious.
 
