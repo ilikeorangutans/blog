@@ -1,7 +1,7 @@
 baseURL = "https://ilikeorangutans.github.io/"
 languageCode = "en-ca"
 title = "Jakob Külzer's Blog"
-theme = "templefork"
+theme = "ilikeorangutans"
 
 disqusShortname = "ilikeorangutans"
 

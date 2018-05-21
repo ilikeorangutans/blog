@@ -99,7 +99,7 @@ more compact code, simply because it doesn't to other things.
 * No inversion of control, leads to stubbing/mocking elements under test
 * Classes in violation of SRP are hard to test because you need to mock everything
 
-## My (a better?) approach to Test Driven Development
+## My Approach to Test Driven Development
 
 Now that we've laid out the background, we can look at the mechanics of TDD again and put them together. The following
 approach is what I now use daily and is inspired by what many superbly smart people like my coworker
