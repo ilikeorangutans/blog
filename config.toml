@@ -1,8 +1,8 @@
 baseURL = "https://ilikeorangutans.github.io/"
 languageCode = "en-ca"
-title = "Jakob Külzer's Blog"
+title = "Jakob Külzer"
 theme = "ilikeorangutans"
-
+copyright = "Jakob Külzer"
 disqusShortname = "ilikeorangutans"
 
 enableGitInfo = true
