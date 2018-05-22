@@ -23,7 +23,7 @@ But of course I didn't want to just use browser default themes, because what is 
 
 #### 3. Hugo's themes and templates are great
 
-I'll admit, it took me a while to understand how Hugo's templates and themes work. In particular the [template lookup order](https://gohugo.io/templates/lookup-order/) is initially confusing, but once I had my head wrapped around it, it became straightforward to make Hugo build the markup I wanted. [Blocks](https://gohugo.io/templates/base/) make it easy to build base templates and plug different sections in, the taxonomy system is fun to work with, and even the menu system allows for easy creation of tags or other structures.
+I'll admit, it took me a while to understand how Hugo's templates and themes work. In particular the [template lookup order](https://gohugo.io/templates/lookup-order/) is initially confusing, but once I had my head wrapped around it, it became straightforward to make Hugo build the markup I wanted. [Blocks](https://gohugo.io/templates/base/) make it easy to build base templates and plug different sections in, the taxonomy system is fun to work with, and even the menu system allows for easy creation of tags or other structures. And I _love_ how the [`.Render`](https://gohugo.io/templates/views/) function can be used to render different "views" of an entity.
 
 Oh, and there is many open source themes for Hugo that can serve as inspiration or can be studied to learn more. In a way this reminds me of the time I was learning HTML.
 
