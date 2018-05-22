@@ -6,4 +6,4 @@ menu:
         weight: 10
 ---
 
-Explore blog posts by date below or [by tags](/tags)
+Explore blog posts by date below or [by tags](/tags).
