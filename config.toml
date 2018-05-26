@@ -5,6 +5,8 @@ theme = "ilikeorangutans"
 copyright = "Jakob Külzer"
 disqusShortname = "ilikeorangutans"
 
+pygmentsCodefences = true
+pygmentsStyle = "manni"
 enableGitInfo = true
 
 [permalinks]
