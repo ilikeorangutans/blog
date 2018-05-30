@@ -1,7 +1,6 @@
 ---
 title: "Projects"
 date: 2018-05-29T15:50:44-04:00
-draft: true
 menu:
     main:
         weight: 30
