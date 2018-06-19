@@ -1,7 +1,6 @@
 ---
 title: "Give Me Smarter Objects"
 date: 2018-06-18T21:20:31-04:00
-draft: true
 tags:
 - Scala
 - OOP
