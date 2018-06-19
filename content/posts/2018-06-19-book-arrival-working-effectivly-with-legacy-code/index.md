@@ -1,7 +1,6 @@
 ---
 title: "Book Arrival: Working Effectivly With Legacy Code"
 date: 2018-06-18T22:58:46-04:00
-draft: true
 tags:
 - Books
 - Software Development
