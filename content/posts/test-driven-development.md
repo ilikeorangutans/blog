@@ -174,3 +174,8 @@ But to fully understand TDD I had to realize that writing unit tests is to TDD w
 don't become a good cook by being good with a knife. It certainly helps that you can efficiently slice onions but it
 doesn't mean your food is delicious.
 
+
+Links
+- https://martinfowler.com/articles/is-tdd-dead/
+- test induced design damage https://enterprisecraftsmanship.com/2015/06/29/test-induced-design-damage-or-why-tdd-is-so-painful/
+- testing distributed systems https://asatarin.github.io/testing-distributed-systems/
