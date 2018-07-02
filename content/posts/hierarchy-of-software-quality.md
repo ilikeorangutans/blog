@@ -2,6 +2,10 @@
 title: "Hierarchy of Software Quality"
 date: 2018-03-31T11:18:16-04:00
 draft: true
+tags:
+  - OOP
+  - Software Design
+
 ---
 
 This is a topic I've been thinking and reading about for a long time. And then in the past months I've been challenged to elaborate why I think code given in one way is better than written in a different way. While unpleasant, this has set me on a course to introspect on software quality, what makes it worthwhile to pursue it, and how to communicate it.
