@@ -10,20 +10,21 @@ Was writing a few posts for my [food blog](http://food.hannah-and-jakob.ca) and 
 The basic key combination is `CTRL-K <base letter> <char>`.
 For example, `CTRL-K u :` results in `ü`.
 
-base letter | char | result
------------ | ---- | ------
-a/o/u       | :    | ä/ö/ü
-s           | s    | ß
-1           | 2/3/4| ½/⅓/¼
-a           | ~    | ã
-c           | ,    | ç
-=           | e    | €
-c           | O    | ©
-+           | -    | ±
-N           | O    | ¬
-M           | y    | µ
-*           | X    | ×
-S           | *    | Σ
+
+| base letter | char | result |
+| ----------- | ---- | ------ |
+| a/o/u       | :    | ä/ö/ü  |
+| s           | s    | ß      |
+| 1           | 2/3/4| ½/⅓/¼  |
+| a           | ~    | ã      |
+| c           | ,    | ç      |
+| =           | e    | €      |
+| c           | O    | ©      |
+| +           | -    | ±      |
+| N           | O    | ¬      |
+| M           | y    | µ      |
+| *           | X    | ×      |
+| S           | *    | Σ      |
 
 This is super useful and I can't believe I never knew about this.
 
