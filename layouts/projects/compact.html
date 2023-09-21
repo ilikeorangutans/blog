@@ -1,0 +1,34 @@
+<div class="column col-6 col-sm-12 mb-2">
+    <div class="card">
+        {{ $cover := .Resources.GetMatch "*.png" }}
+        {{ if $cover }}
+        <div class="card-image">
+            <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+        </div>
+        {{ end }}
+        <div class="card-header">
+            <div class="card-title h5">{{ .Title }}</div>
+            <div class="card-subtitle">
+                <span class="label {{ if eq ( .Param "project.state" ) "usable"}} label-success {{ end }}  {{ if eq ( .Param "project.state" ) "prototype"}} label-warning {{ end }}">
+                    {{ .Param "project.state" }}
+                </span>
+                <span class="label">
+                    {{ .Param "project.language" }}
+                </span>
+                <span class="label">
+                    {{ .Param "project.type" }}
+                </span>
+                {{ .Param "project.image" }}
+            </div>
+        </div>
+        <div class="card-body">
+            {{ .Summary }}
+        </div>
+        <div class="card-footer text-right">
+            <a href="{{ .Param "project.url" }}" class="btn">Github</a>
+            {{ if not (.Param "project.summary-only") }}
+            <a href="{{ .Permalink | relURL }}" class="btn">Read More &rarr;</a>
+            {{ end }}
+        </div>
+    </div>
+</div>

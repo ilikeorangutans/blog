@@ -25,8 +25,7 @@ For example, `CTRL-K u :` results in `ü`.
 | M           | y    | µ      |
 | *           | X    | ×      |
 | S           | *    | Σ      |
+| p           | *    | π      |
 
 This is super useful and I can't believe I never knew about this.
-
-
 
