@@ -47,7 +47,13 @@ Benchmark 1: ./zig-out/bin/1brc measurements.txt
   Range (min … max):    2.640 s …  2.701 s    10 runs
 ```
 
-My initial reaction was that the slow program is likely executing a lot more reads than it should and not knowing how to better measure reads I figured I'd check the number of syscalls emitted by the program. The slow program raked up 3.5 million syscalls.
+My initial reaction was that the slow program is likely executing a lot more reads than it should. I figured the number of syscalls emitted by the program is a good indicator for the number of reads.  I collected the this metric like so:
+
+```
+$ perf stat -e raw_syscalls:sys_enter,user_time,system_time -a ./zig-out/bin/1brc measurements.txt
+```
+
+The slow program raked up 5.6 million syscalls.
 
 ```
  Performance counter stats for 'system wide':
@@ -59,10 +65,9 @@ My initial reaction was that the slow program is likely executing a lot more rea
       50.702825947 seconds time elapsed
 ```
 
-The fast one did only 5.6 million:
+The fast one did only 3.5 million syscalls:
 
 ```
-$ perf stat -e raw_syscalls:sys_enter,user_time,system_time -a ./zig-out/bin/1brc measurements.txt
 loading measurements.txt
 Read 13795239670 bytes
 
@@ -75,7 +80,7 @@ Read 13795239670 bytes
        2.930230893 seconds time elapsed
 ```
 
-Unfortunately the increase in syscalls (5.6 vs 3.5 million) does not quite scale with the program runtime (50 vs 2.5 seconds). My next observation was that the number of executed branches was significantly higher for my first implementation:
+Unfortunately the increase in syscalls (5.6 vs 3.5 million) does not quite scale with the program runtime (50 vs 2.5 seconds). My next observation was that the number of executed branches was significantly higher for my first implementation.
 
 ```
    188,650,271,726      branches:u                       #    3.640 G/sec
