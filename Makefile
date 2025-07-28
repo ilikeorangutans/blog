@@ -10,5 +10,5 @@ build-and-push: build
 
 .PHONY: build
 build:
-	hugo
+	hugo --gc --minify
 

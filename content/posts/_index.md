@@ -1,6 +1,7 @@
 ---
 date: 2012-06-22T13:59:40-04:00
-title: "Blog"
+linkTitle: "Blog"
+title: "Blog Post Archive"
 menu:
     main:
         weight: 10
