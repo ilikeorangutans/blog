@@ -5,9 +5,11 @@ theme = "ilikeorangutans-hugo-theme"
 copyright = "Jakob Külzer"
 disqusShortname = "ilikeorangutans"
 
-pygmentsCodefences = true
-pygmentsStyle = "manni"
 enableGitInfo = true
+
+[markup]
+  [markup.highlight]
+    style = "rainbow_dash"
 
 [permalinks]
   posts = "/:year/:month/:day/:slug"
@@ -16,14 +18,14 @@ enableGitInfo = true
   highlight = true
   dateformat = "2006-01-02"
   dateformatpretty = "January 02 2006"
+[params.author]
+    name = "Jakob Külzer"
+    github = "ilikeorangutans"
+    email = "jakob.kuelzer@gmail.com"
 
 [taxonomies]
   tag = "tags"
   category = "categories"
 
-[author]
-  name = "Jakob Külzer"
-  github = "ilikeorangutans"
-  email = "jakob.kuelzer@gmail.com"
 
 

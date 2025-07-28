@@ -6,4 +6,4 @@ menu:
         weight: 30
 ---
 
-Over time I've written a lot of software that is useful or neat. Much of it was written for employers, but some of it I wrote in my own time. Here's a few that I'm proud of:
+Over time I've written a lot of software that is useful or neat. Much of it was written for employers, but some of it I wrote in my own time. Here are a few things I've built that I'm proud of:
