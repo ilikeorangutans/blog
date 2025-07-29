@@ -3,7 +3,6 @@ languageCode = "en-ca"
 title = "Jakob Külzer"
 theme = "ilikeorangutans-hugo-theme"
 copyright = "Jakob Külzer"
-disqusShortname = "ilikeorangutans"
 
 enableGitInfo = true
 
@@ -27,5 +26,7 @@ enableGitInfo = true
   tag = "tags"
   category = "categories"
 
-
+[services]
+  [services.disqus]
+    shortname = "ilikeorangutans"
 
