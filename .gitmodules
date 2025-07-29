@@ -1,16 +1,10 @@
-[submodule "themes/temple"]
-	path = themes/temple
-	url = https://github.com/aos/temple.git
-[submodule "public"]
-	path = public
-	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
-	branch = master
-[submodule "themes/templefork"]
-	path = themes/templefork
-	url = git@github.com:ilikeorangutans/temple
+#[submodule "public"]
+#	path = public
+#	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
+#	branch = master
 [submodule "themes/ilikeorangutans-hugo-theme"]
 	path = themes/ilikeorangutans-hugo-theme
 	url = git@github.com:ilikeorangutans/ilikeorangutans-hugo-theme.git
-[submodule "ilikeorangutans.github.com"]
-	path = ilikeorangutans.github.com
+[submodule "public"]
+	path = public
 	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
