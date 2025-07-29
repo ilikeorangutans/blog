@@ -11,3 +11,6 @@
 [submodule "themes/ilikeorangutans-hugo-theme"]
 	path = themes/ilikeorangutans-hugo-theme
 	url = git@github.com:ilikeorangutans/ilikeorangutans-hugo-theme.git
+[submodule "ilikeorangutans.github.com"]
+	path = ilikeorangutans.github.com
+	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
