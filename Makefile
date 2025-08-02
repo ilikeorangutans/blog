@@ -2,7 +2,7 @@ NOW=$(shell date -u)
 
 .PHONY: server
 server:
-	hugo server --disableFastRender
+	hugo server -D --disableFastRender
 
 .PHONY: build-and-push
 build-and-push: build
