@@ -1,7 +1,8 @@
-#[submodule "public"]
-#	path = public
-#	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
-#	branch = master
+[submodule "public"]
+	path = public
+	url = git@github.com:ilikeorangutans/ilikeorangutans.github.com.git
+	branch = master
 [submodule "themes/ilikeorangutans-hugo-theme"]
 	path = themes/ilikeorangutans-hugo-theme
 	url = git@github.com:ilikeorangutans/ilikeorangutans-hugo-theme.git
+    branch = master
