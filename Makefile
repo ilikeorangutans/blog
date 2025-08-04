@@ -10,5 +10,5 @@ build-and-push: build
 
 .PHONY: build
 build:
-	hugo build --gc --minify --cleanDestinationDir --forceSyncStatic
+	hugo build --gc --minify --forceSyncStatic
 
