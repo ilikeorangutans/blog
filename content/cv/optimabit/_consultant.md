@@ -4,7 +4,7 @@ date: 2018-02-02
 summaries: 
   - Security Pentest (blackbox/whitebox)
   - Code reviews (focus Security)
-  - Java and XML Instructor
+  - Instructor for Java and XML
   - Software development
   - System administration (Linux)
 ---

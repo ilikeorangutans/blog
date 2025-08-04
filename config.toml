@@ -5,6 +5,7 @@ theme = "ilikeorangutans-hugo-theme"
 copyright = "Jakob Külzer"
 
 enableGitInfo = true
+enableEmoji = true
 
 [markup]
   [markup.highlight]
